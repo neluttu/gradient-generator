@@ -40,6 +40,7 @@
     <meta name="msapplication-config" content="template/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="template/js/gradientGenerator.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
@@ -47,24 +48,27 @@
     </style>
 </head>
 <body class="flex flex-col items-start justify-start min-h-screen gap-5 text-sm bg-white font-roboto text-slate-600">
-    <header class="flex items-center justify-center w-full gap-4 px-3 py-5 mx-auto mt-4 bg-white rounded-md max-w-7xl group">
-        <h1 class="flex items-center justify-center gap-2 text-3xl group">
-            <a href="index.php" title="CSS box shadow generator - easy to use css shadows" class="font-medium rounded-md px-2 py-1 text-white bg-[#3085e8] group-hover:shadow-[0px_0px_12px_6px_rgba(19,_114,_183,_0.29)] cursor-pointer transition-all duration-150 ease-in hover:transition-all hover:duration-500 hover:ease-in">CSS</a> 
-            <span class="[text-shadow:_7px_5px_8px_rgba(131,131,131,0.6)] leading-7">
-                twGradient
-                <small class="block text-sm leading-4 [text-shadow:none;] text-slate-500 font-mono">#generator</small>
-            </span>
-        </h1>
-        <div class="flex items-center justify-end gap-4 grow [&>a]:p-3 [&>a]:font-light [&>a]:text-[15px]">
-            <a href="#" class="hidden md:inline-block">Home</a>
-            <a href="#learn" title="Tutorial CSS box-shadow" class="hidden md:inline-block">Learn</a>
-            <a href="https://icodethis.com" target="_blank" title="iCodeThis.com - daily projects to improve your front end coding skills." class="hidden md:inline-block">iCodeThis</a>
-            <a href="https://x.com/neluttu" target="_blank" class="group" title="X @neluttu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#666666" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" class="drop-shadow-[0px_0px_0px_-30px_rgba(204,204,204,0)]"/>
-                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-                </svg>                
-            </a>
+    <header class="flex items-center mb-10 bg-[url(template/images/wallpaper2.jpg)] bg-center bg-cover justify-center min-h-[120px] w-full max-w-7xl mx-auto mt-4 relative rounded-2xl">
+        <div class="absolute flex items-center justify-start -translate-x-1/2 left-1/2 -bottom-12 min-h-[100px] rounded-2xl bg-white/40 backdrop-blur-md border border-white/30 w-[96%] shadow-[0px_6px_27px_-4px_rgba(204,204,204,0.36)]">
+            <h1 class="flex items-center justify-center gap-2 text-3xl group">
+                <a href="index.php" title="CSS box shadow generator - easy to use css shadows" class="font-medium rounded-md p-3 aspect-square text-white bg-[#3085e8] group-hover:shadow-[0px_0px_12px_6px_rgba(19,_114,_183,_0.29)] cursor-pointer transition-all duration-150 ease-in hover:transition-all hover:duration-500 hover:ease-in flex items-center justify-center text-2xl ml-4">CSS</a> 
+                <span class="[text-shadow:_7px_5px_8px_rgba(131,131,131,0.6)] leading-7">
+                    twGradient
+                    <small class="block text-sm leading-4 [text-shadow:none;] text-slate-500 font-mono">#generator</small>
+                </span>
+            </h1>
+            <div class="flex items-center justify-end gap-4 grow [&>a]:p-3 [&>a]:font-normal [&>a]:text-[15px] pr-4">
+                <a href="#" class="hidden md:inline-block">Home</a>
+                <a href="#learn" title="Tutorial CSS box-shadow" class="hidden md:inline-block">Learn</a>
+                <a href="https://icodethis.com" target="_blank" title="iCodeThis.com - daily projects to improve your front end coding skills." class="hidden md:inline-block">iCodeThis</a>
+                <a href="https://x.com/neluttu" target="_blank" class="group" title="X @neluttu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#666666" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" class="drop-shadow-[0px_0px_0px_-30px_rgba(204,204,204,0)]"/>
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                    </svg>                
+                </a>
+            </div>
         </div>
     </header>
+    

@@ -1,10 +1,90 @@
 <input type="hidden" id="gradientDirection" value="br">
-<input type="hidden" id="gradientFrom" value="slate-300">
+<input type="hidden" id="gradientFrom" value="violet-200">
 <input type="hidden" id="gradientVia" value="slate-900">
-<input type="hidden" id="gradientTo" value="slate-600">
+<input type="hidden" id="gradientTo" value="pink-200">
 <div id="generator" class="w-full py-2 md:py-10">
     <div class="flex flex-col items-start justify-end w-full gap-6 px-2 mx-auto max-w-7xl md:flex-row">
-        <div class="self-stretch w-full rounded-md sm:1/2 md:w-2/3 bg-gradient-to-br from-slate-300 to-slate-600 min-h-[300px] shadow-[1px_1px_28px_4px_rgba(204,_204,_204,_0.22)]" id="gradientBox">&nbsp;</div>
+        <div class="self-stretch flex w-full rounded-md sm:1/2 md:w-2/3 bg-gradient-to-br from-violet-200 to-pink-200 min-h-[300px] shadow-[1px_1px_28px_4px_rgba(204,_204,_204,_0.22)] p-3 hover:[&>div]:opacity-100" id="gradientBox">
+            <div class="flex justify-between items-start min-h-max flex-wrap w-full gap-2 gap-y-1 [&>span]:flex [&>span]:items-center [&>span]:justify-center opacity-0 transition-all duration-300 ease-in">
+                <span class=" group">
+                    <input type="radio" name="direction" id="direction-br" value="br" class="sr-only peer" checked>
+                    <label for="direction-br" class="flex justify-center w-full p-1 transition-all duration-150 ease-in rounded-md opacity-50 cursor-pointer peer-checked:bg-white/80 bg-white/30 peer-checked:opacity-100 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="rotate-45 cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </label>
+                </span>
+                <span class=" group">
+                    <input type="radio" name="direction" id="direction-b" value="b" class="sr-only peer">
+                    <label for="direction-b" class="flex justify-center w-full p-1 transition-all duration-150 ease-in rounded-md opacity-50 cursor-pointer peer-checked:bg-white/80 bg-white/30 peer-checked:opacity-100 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="rotate-90 cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </label>
+                </span>
+                <span class=" group">
+                    <input type="radio" name="direction" id="direction-bl" value="bl" class="sr-only peer">
+                    <label for="direction-bl" class="flex justify-center w-full p-1 transition-all duration-150 ease-in rounded-md opacity-50 cursor-pointer peer-checked:bg-white/80 bg-white/30 peer-checked:opacity-100 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="rotate-[135deg] cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </label>
+                </span>
+                <span class="w-full h-px"></span>
+                <span class="self-center group">
+                    <input type="radio" name="direction" id="direction-r" value="r" class="sr-only peer">
+                    <label for="direction-r" class="flex justify-center w-full p-1 transition-all duration-150 ease-in rounded-md opacity-50 cursor-pointer peer-checked:bg-white/80 bg-white/30 peer-checked:opacity-100 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer -rotate-135" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </label>
+                </span>
+                <span class="self-center p-1 text-4xl leading-normal font-medium text-white rounded-md group [text-shadow:_7px_5px_30px_#838383] text-center">
+                    <span class="transition-all duration-300 ease-in opacity-100 group-hover:opacity-0">Play. Have fun.</span>
+                </span>
+                <span class="self-center group">
+                    <input type="radio" name="direction" id="direction-l" value="l" class="sr-only peer">
+                    <label for="direction-l" class="flex justify-center w-full p-1 transition-all duration-150 ease-in rounded-md opacity-50 cursor-pointer peer-checked:bg-white/80 bg-white/30 peer-checked:opacity-100 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="-rotate-180 cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </label>
+                </span>
+                <span class="w-full h-px"></span>
+                <span class="self-end group">
+                    <input type="radio" name="direction" id="direction-tr" value="tr" class="sr-only peer">
+                    <label for="direction-tr" class="flex justify-center w-full p-1 transition-all duration-150 ease-in rounded-md opacity-50 cursor-pointer peer-checked:bg-white/80 bg-white/30 peer-checked:opacity-100 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="-rotate-45 cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </label>
+                </span>
+                <span class="self-end group">
+                    <input type="radio" name="direction" id="direction-t" value="t" class="sr-only peer">
+                    <label for="direction-t" class="flex justify-center w-full p-1 transition-all duration-150 ease-in rounded-md opacity-50 cursor-pointer peer-checked:bg-white/80 bg-white/30 peer-checked:opacity-100 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="-rotate-90 cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </label>
+                </span>
+                <span class="self-end group">
+                    <input type="radio" name="direction" id="direction-tl" value="tl" class="sr-only peer">
+                    <label for="direction-tl" class="flex justify-center w-full p-1 transition-all duration-150 ease-in rounded-md opacity-50 cursor-pointer peer-checked:bg-white/80 bg-white/30 peer-checked:opacity-100 hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer -rotate-[135deg]" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
+                        </svg>
+                    </label>
+                </span>
+            </div>            
+        </div>
         <controls class="w-full sm:1/2 md:w-1/3 md:mt-0 flex flex-col items-start justify-start h-full gap-3 p-2 md:p-5 bg-white rounded-md [&_input]:rounded-sm [&_input]:p-1 shadow-[1px_1px_28px_4px_rgba(204,_204,_204,_0.22)]">
             <label for="useVia" class="w-full p-2 transition-all duration-150 ease-in border rounded-md cursor-pointer hover:text-rose-600 border-slate-200">
                 <input type="checkbox" id="useVia" class=""> <span class="pl-2">Use middle gradient color.</span>
@@ -14,7 +94,7 @@
                     <input type="radio" name="color" id="from" value="from" class="hidden peer" checked>
                     <label class="inline-block w-full p-1 rounded-md cursor-pointer" for="from">
                         FROM
-                        <small class="block" id="userColorFromText">slate-300</small>
+                        <small class="block" id="userColorFromText">violet-200</small>
                     </label>
                 </span>
                 <span class="flex-1 hidden w-full p-1 rounded-md tabInactive" id="via-label">
@@ -28,7 +108,7 @@
                     <input type="radio" name="color" id="to" value="to" class="hidden peer">
                     <label class="inline-block w-full p-1 rounded-md cursor-pointer" for="to">
                         TO
-                        <small class="block" id="userColorToText">slate-900</small>
+                        <small class="block" id="userColorToText">pink-200</small>
                     </label>
                 </span>
             </div>
@@ -300,185 +380,10 @@
                     <label for="bg-rose-900" class="flex-1 cursor-pointer rounded-md h-[30px] bg-rose-900"><input type="radio" id="bg-rose-900" value="rose-900" name="userColor" class="hidden"></label>
                 </div>
             </div>
-            <script>
-                const selectedColor = document.querySelectorAll('input[type="radio"][name="userColor"]');
-                const userColorFromText = document.getElementById('userColorFromText');
-                const userColorViaText = document.getElementById('userColorViaText');
-                const fromLabel = document.getElementById('from-label');
-                const toLabel = document.getElementById('to-label');
-                const viaLabel = document.getElementById('via-label');
-                const userColorToText = document.getElementById('userColorToText');
-                const gradientBox = document.getElementById('gradientBox');
-                const tabSelect = document.querySelectorAll('input[type="radio"][name="color"]');
-                let selectedTab = null;
-                const useVia = document.getElementById('useVia');
-                const gradientDirection = document.getElementById('gradientDirection');
-                const gradientFrom = document.getElementById('gradientFrom');
-                const gradientVia = document.getElementById('gradientVia');
-                const gradientTo = document.getElementById('gradientTo');
-                
-                selectedColor.forEach(twColor => {
-                    twColor.addEventListener('change', function () {
-                        // Fuck around and find out which tab si selected.
-                        tabSelect.forEach(twColor => {
-                            if (twColor.checked) 
-                                selectedTab = twColor.value;
-                        });
-                        // Selected tab = selectedTab;
-                        
-                        if (this.checked) {
-                            if(selectedTab == 'from') {
-                                userColorFromText.innerHTML = this.value;
-                                gradientFrom.value = this.value;
-                            }
-                            else if (selectedTab == 'to') {
-                                userColorToText.innerHTML = this.value;
-                                gradientTo.value = this.value;
-                            }
-
-                            else if (selectedTab == 'via') {
-                                userColorViaText.innerHTML = this.value;
-                                gradientVia.value = this.value;
-                            }
-                        }
-
-
-                        // Remove #gradientBox gradient classes
-                        const classes = gradientBox.classList;
-                        const prefixRegExp = /^(from-|bg-gradient-|to-|via-).*/;
-                        const filteredClasses = Array.from(classes).filter(className => !prefixRegExp.test(className));
-                        gradientBox.className = '';
-                        
-                        filteredClasses.forEach(className => {
-                            gradientBox.classList.add(className);
-                        });
-
-                        gradientBox.classList.add('bg-gradient-to-' + gradientDirection.value);
-                        gradientBox.classList.add('from-' + gradientFrom.value);
-                        if(useVia.checked) gradientBox.classList.add('via-' + gradientVia.value);
-                        gradientBox.classList.add('to-' + gradientTo.value);
-                        
-                    });
-                });                
-                
-                const radioInputs = document.querySelectorAll('input[name="color"]');
             
-                radioInputs.forEach(input => {
-                    input.addEventListener('change', function() {
-                        if (this.value == 'from') {
-                            fromLabel.classList.remove('tabInactive');
-                            fromLabel.classList.add('tabActive');
-                            viaLabel.classList.add('tabInactive');
-                            viaLabel.classList.remove('tabActive');
-                            toLabel.classList.add('tabInactive');
-                            toLabel.classList.remove('tabActive');
-                        }
-                        else if(this.value == 'to') {
-                            fromLabel.classList.add('tabInactive');
-                            fromLabel.classList.remove('tabActive');
-                            viaLabel.classList.add('tabInactive');
-                            viaLabel.classList.remove('tabActive');
-                            toLabel.classList.remove('tabInactive');
-                            toLabel.classList.add('tabActive');
-                        }
-
-                        else if(this.value == 'via') {
-                            fromLabel.classList.add('tabInactive');
-                            fromLabel.classList.remove('tabActive');
-                            viaLabel.classList.remove('tabInactive');
-                            viaLabel.classList.add('tabActive');
-                            toLabel.classList.add('tabInactive');
-                            toLabel.classList.remove('tabActive');
-                        }
-                    });
-                });
-
-                useVia.addEventListener('change', function() {
-                    viaLabel.classList.toggle('hidden');
-                    if(!useVia.checked) {
-                        // Remove #gradientBox gradient classes
-                        const classes = gradientBox.classList;
-                        const prefixRegExp = /^(from-|bg-gradient-|to-|via-).*/;
-                        const filteredClasses = Array.from(classes).filter(className => !prefixRegExp.test(className));
-                        gradientBox.className = '';
-                        
-                        filteredClasses.forEach(className => {
-                            gradientBox.classList.add(className);
-                        });
-
-                        gradientBox.classList.add('bg-gradient-to-' + gradientDirection.value);
-                        gradientBox.classList.add('from-' + gradientFrom.value);
-                        gradientBox.classList.add('to-' + gradientTo.value);
-                        tabSelect[0].checked = true;
-                        fromLabel.classList.remove('tabInactive');
-                        fromLabel.classList.add('tabActive');
-
-                    }
-                });
-                </script>
-                
-            <div class="flex flex-wrap w-full gap-2 gap-y-1 [&>span]:flex [&>span]:items-center [&>span]:justify-center">
-                <span class="flex-1 group">
-                    <input type="radio" name="direction" id="direction-br" value="br" class="sr-only peer" checked>
-                    <label for="direction-br" class="flex justify-center w-full p-1 rounded-md cursor-pointer peer-checked:bg-blue-100 bg-slate-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="rotate-45 cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
-                        </svg>
-                    </label>
-                </span>
-                <span class="flex-1 p-1 border rounded-md group">
-                    <input type="radio" name="direction" id="direction-b" value="b" class="sr-only peer">
-                    <label for="direction-b" class="peer-checked:bg-blue-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="rotate-90 cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
-                        </svg>
-                    </label>
-                </span>
-                <span class="flex-1 p-1 border rounded-md group">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="rotate-[135deg]" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
-                    </svg>
-                </span>
-                <span class="w-full h-px"></span>
-                <span class="flex-1 p-1 border rounded-md group">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="-rotate-135" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
-                    </svg>                    
-                </span>
-                <span class="flex-1 p-1 rounded-md group">DIRECTION</span>
-                <span class="flex-1 p-1 border rounded-md group">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="-rotate-180" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
-                    </svg>                    
-                </span>
-                <span class="w-full h-px"></span>
-                <span class="flex-1 p-1 border rounded-md group">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="-rotate-45" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
-                    </svg>                    
-                </span>
-                <span class="flex-1 p-1 border rounded-md group">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="-rotate-90" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
-                    </svg>                    
-                </span>
-                <span class="flex-1 p-1 border rounded-md group">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="-rotate-[135deg]" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9393a5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" stroke-width="0" fill="currentColor" />
-                    </svg>                    
-                </span>
-            </div>
             <p>Copy code:</p>
             <div class="flex flex-col items-center justify-between w-full gap-3 lg:flex-row">
-                <button id="css-code" data-code="text-shadow: 7px 5px 8px #838383;" class="flex-1 shrink-0 w-full bg-gradient-to-b from-[#3085e8] to-[#0075ff] text-white p-3 rounded-md flex items-center justify-center gap-2 text-sm transition-all duration-150 ease-in hover:shadow-[0px_0px_12px_6px_rgba(19,_114,_183,_0.29)]">
+                <button id="css-code" data-code="bg-gradient-to-br from-violet-200 to-pink-200" class="hidden flex-1 shrink-0 w-full bg-gradient-to-b from-[#3085e8] to-[#0075ff] text-white p-3 rounded-md flex items-center justify-center gap-2 text-sm transition-all duration-150 ease-in hover:shadow-[0px_0px_12px_6px_rgba(19,_114,_183,_0.29)]">
                     <svg xmlns="http://www.w3.org/2000/svg" class="" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
@@ -486,7 +391,7 @@
                     </svg>
                     <span>Vanilla CSS</span>
                 </button>
-                <button id="tailwind-code" data-code="[text-shadow:_7px_5px_8px_#838383]" class="flex-1 shrink-0 w-full bg-gradient-to-b from-[#3085e8] to-[#0075ff] text-white p-3 rounded-md flex items-center justify-center gap-2 text-sm transition-all duration-150 ease-in hover:shadow-[0px_0px_12px_6px_rgba(19,_114,_183,_0.29)]">
+                <button id="tailwind-code" data-code="bg-gradient-to-br from-violet-200 to-pink-200" class="flex-1 shrink-0 w-full bg-gradient-to-b from-[#3085e8] to-[#0075ff] text-white p-3 rounded-md flex items-center justify-center gap-2 text-sm transition-all duration-150 ease-in hover:shadow-[0px_0px_12px_6px_rgba(19,_114,_183,_0.29)]">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
