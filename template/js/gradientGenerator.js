@@ -18,6 +18,30 @@ document.addEventListener("DOMContentLoaded", function() {
     const gradientVia = document.getElementById('gradientVia');
     const gradientTo = document.getElementById('gradientTo');
     const directionInputs = document.querySelectorAll('input[type="radio"][name="direction"]');
+
+    // CSS / TailwindCSS buttons + code
+    const cssCode = document.getElementById("css-code");
+    const tailwindCode = document.getElementById("tailwind-code");
+    const cssResultText = document.getElementById("cssResult");
+    const tailwindResult = document.getElementById("tailwindResult");
+
+    const cssCodeButtons = document.querySelectorAll("button[data-code]");
+    cssCodeButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const codeToCopy = this.getAttribute("data-code");
+            const textArea = document.createElement("textarea");
+            textArea.value = codeToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            const originalText = this.querySelector("span").textContent;
+            this.querySelector("span").textContent = "Copied!";
+            setTimeout(() => {
+            this.querySelector("span").textContent = originalText;
+            }, 3000);
+        });
+    });
     
     selectedColor.forEach(twColor => {
         twColor.addEventListener('change', function () {
@@ -43,8 +67,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     gradientVia.value = this.value;
                 }
             }
-
-
             updateGradientClasses();            
         });
     });                
@@ -54,15 +76,29 @@ document.addEventListener("DOMContentLoaded", function() {
         const prefixRegExp = /^(from-|bg-gradient-|to-|via-).*/;
         const filteredClasses = Array.from(classes).filter(className => !prefixRegExp.test(className));
         gradientBox.className = '';
+        let viaValue = '';
         
         filteredClasses.forEach(className => {
             gradientBox.classList.add(className);
         });
 
-        gradientBox.classList.add('bg-gradient-to-' + gradientDirection.value);
-        gradientBox.classList.add('from-' + gradientFrom.value);
-        if(useVia.checked) gradientBox.classList.add('via-' + gradientVia.value);
-        gradientBox.classList.add('to-' + gradientTo.value);
+        const classesToAdd = [
+            'bg-gradient-to-' + gradientDirection.value,
+            'from-' + gradientFrom.value
+          ];
+          
+        if (useVia.checked) {
+            classesToAdd.push('via-' + gradientVia.value);
+            viaValue = 'via-' + gradientVia.value;
+        }
+
+          classesToAdd.push('to-' + gradientTo.value);
+          gradientBox.classList.add(...classesToAdd);
+
+          var tailwind = 'bg-gradient-to-' + gradientDirection.value + ' from-' + gradientFrom.value + ' ' + viaValue + ' to-' + gradientTo.value;
+          tailwindResult.textContent = tailwind;
+          tailwindCode.dataset.code = tailwind;
+  
     }
 
     const radioInputs = document.querySelectorAll('input[name="color"]');
@@ -104,6 +140,8 @@ document.addEventListener("DOMContentLoaded", function() {
             tabSelect[0].checked = true;
             fromLabel.classList.remove('tabInactive');
             fromLabel.classList.add('tabActive');
+            toLabel.classList.remove('tabActive');
+            toLabel.classList.add('tabInactive');
 
         }
     });

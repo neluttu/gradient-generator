@@ -2,7 +2,7 @@
 <input type="hidden" id="gradientFrom" value="violet-200">
 <input type="hidden" id="gradientVia" value="slate-900">
 <input type="hidden" id="gradientTo" value="pink-200">
-<div id="generator" class="w-full py-2 md:py-10">
+<div id="generator" class="w-full mt-24 mb-10">
     <div class="flex flex-col items-start justify-end w-full gap-6 px-2 mx-auto max-w-7xl md:flex-row">
         <div class="self-stretch flex w-full rounded-md sm:1/2 md:w-2/3 bg-gradient-to-br from-violet-200 to-pink-200 min-h-[300px] shadow-[1px_1px_28px_4px_rgba(204,_204,_204,_0.22)] p-3 hover:[&>div]:opacity-100" id="gradientBox">
             <div class="flex justify-between items-start min-h-max flex-wrap w-full gap-2 gap-y-1 [&>span]:flex [&>span]:items-center [&>span]:justify-center opacity-0 transition-all duration-300 ease-in">
@@ -116,7 +116,7 @@
             
             <div class="w-full max-h-[300px] overflow-y-auto overflow-x-clip -mt-7 [&_label:hover]:scale-125 [&_label]:transition-all [&_label]:duration-150 [&_label]:ease-in">
                 <div class="flex items-center justify-between w-full gap-2 mt-7 before:content-['Slate'] before:absolute relative before:-top-5">
-                    <label for="bg-slate-50" class="flex-1 cursor-pointer rounded-md h-[30px] bg-slate-50"><input type="radio" id="bg-slate-50" value="slate-50" name="userColor" class="hidden" checked></label>
+                    <label for="bg-slate-50" class="flex-1 cursor-pointer rounded-md h-[30px] bg-slate-50"><input type="radio" id="bg-slate-50" value="slate-50" name="userColor" class="hidden"></label>
                     <label for="bg-slate-100" class="flex-1 cursor-pointer rounded-md h-[30px] bg-slate-100"><input type="radio" id="bg-slate-100" value="slate-100" name="userColor" class="hidden"></label>
                     <label for="bg-slate-200" class="flex-1 cursor-pointer rounded-md h-[30px] bg-slate-200"><input type="radio" id="bg-slate-200" value="slate-200" name="userColor" class="hidden"></label>
                     <label for="bg-slate-300" class="flex-1 cursor-pointer rounded-md h-[30px] bg-slate-300"><input type="radio" id="bg-slate-300" value="slate-300" name="userColor" class="hidden"></label>
@@ -322,7 +322,7 @@
                 <div class="flex items-center justify-between w-full gap-2 mt-7 before:content-['Violet'] before:absolute relative before:-top-5">
                     <label for="bg-violet-50" class="flex-1 cursor-pointer rounded-md h-[30px] bg-violet-50"><input type="radio" id="bg-violet-50" value="violet-50" name="userColor" class="hidden"></label>
                     <label for="bg-violet-100" class="flex-1 cursor-pointer rounded-md h-[30px] bg-violet-100"><input type="radio" id="bg-violet-100" value="violet-100" name="userColor" class="hidden"></label>
-                    <label for="bg-violet-200" class="flex-1 cursor-pointer rounded-md h-[30px] bg-violet-200"><input type="radio" id="bg-violet-200" value="violet-200" name="userColor" class="hidden"></label>
+                    <label for="bg-violet-200" class="flex-1 cursor-pointer rounded-md h-[30px] bg-violet-200"><input type="radio" id="bg-violet-200" value="violet-200" name="userColor" class="hidden" checked></label>
                     <label for="bg-violet-300" class="flex-1 cursor-pointer rounded-md h-[30px] bg-violet-300"><input type="radio" id="bg-violet-300" value="violet-300" name="userColor" class="hidden"></label>
                     <label for="bg-violet-400" class="flex-1 cursor-pointer rounded-md h-[30px] bg-violet-400"><input type="radio" id="bg-violet-400" value="violet-400" name="userColor" class="hidden"></label>
                     <label for="bg-violet-500" class="flex-1 cursor-pointer rounded-md h-[30px] bg-violet-500"><input type="radio" id="bg-violet-500" value="violet-500" name="userColor" class="hidden"></label>
@@ -404,9 +404,9 @@
 </div>
 <ul class="flex flex-col items-start justify-center w-full gap-4 p-3 mx-auto mt-4 mb-10 max-w-7xl">
     <li>
-        <h2 class="text-xl font-normal">Raw text-shadow code:</h2>
+        <h2 class="text-xl font-normal">TailwindCSS gradient code:</h2>
     </li>
-    <li class="flex items-center justify-start w-full gap-4">
+    <!-- <li class="flex items-center justify-start w-full gap-4">
         <span class="block aspect-square p-2 bg-[#3085e8] rounded-md">
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -417,7 +417,7 @@
         <code id="cssResult" class="p-3 break-all bg-white border rounded-md border-slate-300 grow">
             text-shadow: 7px 5px 8px #838383;
         </code>                
-    </li>
+    </li> -->
     <li class="flex items-center justify-start w-full gap-4">
         <span class="block aspect-square p-2 bg-[#3085e8] rounded-md">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -426,10 +426,10 @@
             </svg>
         </span>
         <code id="tailwindResult" class="p-3 break-all bg-white border rounded-md border-slate-300 grow">
-            [text-shadow:_7px_5px_8px_#838383;]
+            bg-gradient-to-br from-violet-200 to-pink-200
         </code>                
     </li>
     <li>
-        <small>Note: At the moment, there is no official support for text-shadow classes in Tailwind CSS</small>
+        <small class="hidden">Note: At the moment, there is no official support for text-shadow classes in Tailwind CSS</small>
     </li>
 </ul>
